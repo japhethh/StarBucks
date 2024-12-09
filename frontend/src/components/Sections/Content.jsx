@@ -2,7 +2,7 @@ import { image } from "../../constants";
 
 const Content = () => {
   return (
-    <div className="container mx-auto  ">
+    <div className="container mx-auto  px-10">
       <div className="grid grid-cols-1 md:grid-cols-2 my-4">
         {/* Image Section */}
         <div className="bg-cover bg-center">
@@ -39,7 +39,7 @@ const Content = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 my-4">
         {/* Content Section */}
-        <div className=" bg-[#F9F9F9]">
+        <div className=" bg-[#F9F9F9] flex justify-center items-center">
           <div className="w-4/6 mx-auto my-8">
             <div className="text-center flex flex-col gap-3">
               <h1 className="font-bold text-2xl py-5 text-black/80 ">

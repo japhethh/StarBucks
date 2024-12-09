@@ -5,6 +5,7 @@ import column2_1 from "../assets/column2_1.jpg";
 import column2_2 from "../assets/column2_2.jpg";
 import column2_3 from "../assets/column2_3.jpg";
 import column2_4 from "../assets/column2_4.jpg";
+import column2_5 from "../assets/column2_5.jpg";
 export const image = {
   sblogo,
   herobackground,
@@ -13,4 +14,5 @@ export const image = {
   column2_2,
   column2_3,
   column2_4,
+  column2_5,
 };
