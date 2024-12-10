@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Nav from "./components/nav";
 import Content from "./components/Sections/Content";
 import Content2 from "./components/Sections/Content2";
@@ -9,6 +10,7 @@ const App = () => {
       <Hero />
       <Content />
       <Content2 />
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { image } from "../constants";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { MdLocationPin } from "react-icons/md";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -12,29 +13,36 @@ const Nav = () => {
         <div>
           <div className="flex gap-4">
             <img
-              className="w-14 h-14 mx-3 max-md:block"
+              className="w-14 h-14 mx-3 max-md:block cursor-pointer"
               src={image.sblogo}
               alt=""
             />
             <div className="flex justify-center items-center gap-4 max-md:hidden">
               <h1 className="cursor-pointer hover:text-green-800">MENU</h1>
-              <h1 className="cursor-pointer hover:text-green-800">MERCHANDISE</h1>
+              <h1 className="cursor-pointer hover:text-green-800">
+                MERCHANDISE
+              </h1>
               <h1 className="cursor-pointer hover:text-green-800">REWARDS</h1>
             </div>
           </div>
         </div>
         <div className="max-md:hidden">
-          <ul className="flex justify-center items-center gap-3">
+          <ul className="flex justify-center items-center gap-3 font-semibold">
             <li className="mr-3 ">
-              <h1 className="px-3">Find a Store</h1>
+              <button className="px-3 flex gap-1 hover:text-green-800 justify-center items-center">
+                <span>
+                  <MdLocationPin className="text-2xl" />
+                </span>
+                Find a Store
+              </button>
             </li>
             <li>
-              <button className="bg-white text-black border border-black rounded-full px-4 py-1">
+              <button className="bg-white text-black border border-black rounded-full px-4 py-1  hover:bg-gray-100">
                 Sign in
               </button>
             </li>
             <li>
-              <button className="rounded-full px-4 py-1.5 bg-black text-white">
+              <button className="rounded-full px-4 py-1.5 bg-black text-white hover:opacity-80">
                 Join Now
               </button>
             </li>
@@ -53,7 +61,10 @@ const Nav = () => {
           <div className="fixed top-0 right-0 h-full w-64 bg-white z-50 p-5">
             <div className="flex justify-between items-center">
               <h2 className="text-xl font-bold">Menu</h2>
-              <IoClose className="text-2xl cursor-pointer" onClick={() => setOpen(false)} />
+              <IoClose
+                className="text-2xl cursor-pointer"
+                onClick={() => setOpen(false)}
+              />
             </div>
             <ul className="mt-5 space-y-4">
               <li className="cursor-pointer">MENU</li>
