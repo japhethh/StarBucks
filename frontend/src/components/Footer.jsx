@@ -14,7 +14,7 @@ const Footer = () => {
               </h2>
               <ul className="flex flex-col gap-3 text-gray-600">
                 <li className="cursor-pointer">
-                  <a href="#">Our Company</a>
+                  <a href="#">Our Companys</a>
                 </li>
                 <li className="cursor-pointer">
                   <a href="#">Stories and News</a>
